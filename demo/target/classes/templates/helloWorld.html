@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">  
+<head>
+    <meta charset="UTF-8"></meta>
+    <title>Spring Boot Test – Hello World</title>
+</head>
+<body>
+    <h1>Hello World</h1>
+
+    <form method="post" action="/helloWorld">
+        <!-- Besprechen: Tymeleaf Attribute: "th:value" -->
+        Enter text:
+        <input type="text" name="text1" th:value="${text1_value}" />
+        <input type="submit" value="Senden" />
+    </form>
+</body>
+</html>
